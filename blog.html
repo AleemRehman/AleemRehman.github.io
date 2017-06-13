@@ -1,0 +1,18 @@
+---
+layout: default
+title: "Blog"
+description: "The design and development blog of Aleem Rehman, a digital designer and front-end developer."
+canonical: "Blog"
+card_image: true
+---
+
+{% include page-title.html %}
+
+<div class="center mw6 mb5 ph4 ph0-l">
+  {% for post in site.posts %}
+    {% include post-list-item.html %}
+  {%endfor%}
+</div>
+
+
+{%include footer.html%}
