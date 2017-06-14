@@ -64,10 +64,6 @@ collections:
     output: true
     permalink: /:collection/:path/
 
-# Custom configs
-daily_rate: £300
-hourly_rate: £40
-
 # Navigation
 navigation:
   - title: Projects
