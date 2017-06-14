@@ -22,14 +22,16 @@ category: "case study"
 canonical: "Case Study"
 ---
 
-<p>The <a class="{{site.link_classes}}" href="https://github.com/webSmart001/MPC">Modern Pie company</a>was created for a university human computer interaction course. I worked with 
+<p>The <a class="{{site.link_classes}}" href="https://github.com/webSmart001/MPC">Modern Pie company</a> was created for a university human computer interaction course. I worked with 
 and led a team of 4 other team members. Team members were all assigned roles based on their skills, due to this I lead as project manager and as the lead developer.</p>
 
 <br>
 
 <h2 class="{{site.post_heading_classes}}">Design</h2>
 
-<p>The design was kept simple. The focus had to be on the spaces themselves, with little distraction.</p>
+<p>The design needed to be kept minimal but there are some powerful back-end techniques used to make the web-app
+  run more efficiently and faster on both desktop and mobile. By bootstrapping the site most of the layout of the site
+  follows a uniform struture, maintaining the quality of grids across devices and browsers.</p>
 <!--
 <div class="cf ph3-l center">
   <figure class="tc db mv2 fl w-100 w-50-m w-25-l ma0 ph2-m ph3-l">
@@ -46,7 +48,6 @@ and led a team of 4 other team members. Team members were all assigned roles bas
   </figure>
 </div>-->
 
-<br>
 
 <p>The website needed to follow a few basic requirements:</p>
 
@@ -58,7 +59,10 @@ and led a team of 4 other team members. Team members were all assigned roles bas
   <li>Staff page - showing active staff and their department</li>
 </ol>
 
-<p>And that is all there is to it. I thought it was important to focus only on the key aspects of a working space; the wifi speed, opening hours and password (so you’re not looking around wondering who to ask) - no images (for performance reasons), and no reviews. Foursquare and tripAdvisor do reviews brilliantly, it was important to focus on only one metric - the wifi speed.</p>
+<p>The design needed to be comprehensive with clean design. The site was content first, demonstrating 
+  that the content needed to be placed at the forefront. Beacuse of this simple, clean fonts and colours 
+  are used in conjunction to aid the readabilty of the forms and the menu.
+</p>
 
 <div class="mw8 center mv4">
   <div class="flex flex-wrap justify-around">
@@ -76,52 +80,23 @@ and led a team of 4 other team members. Team members were all assigned roles bas
     </div>
   </div>
 </div>
+ 
+<br>
+ 
+<h2 class="{{site.post_heading_classes}}">Accessibility First</h2>
 
-<h2 class="{{site.post_heading_classes}}">Offline first</h2>
+<p>When analysing earlier versions of the site it was found that there was a lack of user accessibility dependant on user age. To combat this 
+  accessibility buttons were added to the navigation bar. The design of the site changes largely when the accessibility version of the site is accessed.</p>
 
-<p>I used a <a class="{{site.link_classes}}" href="https://developers.google.com/web/fundamentals/getting-started/primers/service-workers">Service Worker</a> to ready the web app for offline use. A service worker is a script that your browser runs in the background, independently of the web page. In this case it was used to cache static assets to ready them for offline use, if needed.</p>
-
-<p>I figured it was particularly important that the website worked offline given that its primary use is to find spaces with wifi. </p>
-
-<h2 class="{{site.post_heading_classes}}">Progressive Web App</h2>
-
-<p>This was my first time in taking active measures to create a progressive web app(PWA).</p>
+<br>
 
 <blockquote class="mw7 center f3 lh-copy mv5">
-  &ldquo;A PWA uses modern web capabilities to deliver an <mark class="bg-yellow fs-normal">app-like experience</mark>.&rdquo;
+  &ldquo;Web accessibility refers to the inclusive practice of <mark class="fs-normal bg-yellow">removing</mark> barriers that prevent interaction with, or access to websites.&rdquo;
 </blockquote>
 
-{% include figure.html url="tryingtowork-pwa-score" type="png" alt="Trying to work PWA score" caption="Progress Web app score using Google Lighthouse" %}
+{% include figure.html url="accs-ModernPie" type="png" alt="Accessibility of the site" caption="Show the website after accessibility" %}
 
-<p>I used this nifty tool to test the website and after some adjustments and tweaks, managed to get a perfect score. The website was now a PWA.</p>
-
-<h2 class="{{site.post_heading_classes}}">Built in Jekyll</h2>
-
-<p>I decided to use [Jekyll](https://jekyllrb.com/) for this as a starting point. Its easy to use, really fast and perfect for small side projects. The spaces are populated using markdown files. All data is pulled from the frontmatter in the markdown file. Its laid out like so:</p>
-
-{% highlight liquid %}
----
-title: The Black Box
-date: 12/05/2017
-type: "Arts Venue"
-location: "Cathedral Quarter"
-speed: 5
-password: BlackBoxVenue
-opening_times:
-  - day: Wednesday
-    time: 10am-11pm
-  - day: Thursday
-    time: 10am-11pm
-  - day: Friday
-    time: 10am-11pm
-  - day: Saturday
-    time: 10am-11pm
-  - day: Sunday
-    time: 10am-11pm
----
-{% endhighlight %}
-
-<p>Entries are added manually for the time being by adding new markdown files and pushing to github but I would like to automate this at some point in the future.</p>
+<br>
 
 <h2 class="{{site.post_heading_classes}}">It's fast</h2>
 
@@ -136,10 +111,6 @@ opening_times:
   <li><strong>Cloudflare</strong> - Github Pages is already fast but adding Cloudflare means free SSL, a better CDN and more customisable caching options.</li>
 </ol>
 
-<h2 class="{{site.post_heading_classes}}">What's next?</h2>
+<br>
 
-<p>This was just a weekend side project. If it gains interest I will look into extending the functionality so that users can submit and edit spaces themselves.</p>
-
-<p>I would also like to expand it out for other cities, such as Dublin, London etc. <code class="{{site.code_classes}}">tryingtowork.in/london</code> Wouldn’t that be cool?</p>
-
-<p>Visit <a class="{{site.link_classes}}" href="https://tryingtowork.in">https://tryingtowork.in</a> or <a class="{{site.link_classes}}" href="https://github.com/mckeever02/tryingtowork">view the source code on Github</a>
+<p>Visit the Modern Pie Company<a class="{{site.link_classes}}" href="https://github.com/webSmart001/MPC"> source code</a>.</p>
