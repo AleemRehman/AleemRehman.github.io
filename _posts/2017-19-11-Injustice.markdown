@@ -1,62 +1,19 @@
 --- 
 layout: post 
 type: "post" 
-title:  "Displaying dynamic opening times in Jekyll" 
-date:   2017-05-15 
+title:  "Injustice in Grenfell" 
+date:   2017-19-11 
 categories: jekyll liquid 
 canonical: "Blog post" 
-description: "Here is how to display 'Google-like' dynamic opening times using liquid, Jekyll's templating language." 
+description: "The injustice shown before, during and after the Grenfell disaster." 
 --- 
  
-A problem I came across when building [Trying to work](//tryingtowork.in) was how do I display "Google-like" dynamic opening times using only liquid&mdash;Jekyll's templating language? Well, as it turns out, quite easily. 
-![Opening times in Jekyll example]({{site.baseurl}}/images/established.png) 
+On the 14th of June Grenfell tower in North Kensington went up in flames. This fire was preventable. The events before this would define the state of the establishment running the country, later going on to define their blatant disregard for middle class lives.
+![Grenfell Tower]({{site.baseurl}}/images/grenfell-fire.jpeg) 
  
-What I wanted to do was filter through a list of days in a markdown file's front matter and display if the space was open or not. 
- 
-Here's how the front matter would look for a spaces opening times: 
- 
-```markdown 
-opening_times: 
-  - day: Monday 
-    time: Closed 
-  - day: Tuesday 
-    time: Closed 
-  - day: Wednesday 
-    time: 10am-11pm 
-  - day: Thursday 
-    time: 10am-11pm 
-  - day: Friday 
-    time: 10am-11pm 
-  - day: Saturday 
-    time: 10am-11pm 
-  - day: Sunday 
-    time: 10am-11pm 
-``` 
- 
-And here is how you would cycle through the list and find out if it is open or not. 
- 
-```liquid 
-{%raw%} 
-{% assign currentDay = site.time | date: '%A' %} 
- 
-{% for time in space.opening_times %} 
-  {% if time.day contains currentDay  %} 
-      {%assign openingTimes = time.time%} 
-      {%if openingTimes contains "Closed" %} 
-        <strong class="spaces-times">Closed today&nbsp;</strong> 
-      {%else%} 
-        <strong class="spaces-times">Open today&nbsp;</strong> 
-        {{openingTimes}} 
-      {%endif%} 
-  {%endif%} 
-{%endfor%} 
-{%endraw%} 
-``` 
- 
-Here's how this works. First, you create a variable using `assign currentDay = site.time | date: '%A'`. This means assign `currentDay` variable to today's day &mdash; which is {{site.time | date: '%A'}}. 
- 
-Next, use a `for` loop to cycle through the `opening_times` list and if today matches a day in the list, then create a variable called `openingTimes` and store that day's opening times in it. We then use this variables to determine if the opening time for that day contains "Closed" or not. If it does, then the space is closed, else it isn't. Simples! Liquid ftw. 
- 
-The next step would be to also determine if it is open using the time of day and measuring this against the stated times in the front matter. Any takers? 
- 
-Have any suggestions to improve or extend on this? [Hit me up on Twitter]({{site.social.twitter.url}}{{site.social.twitter.username}}).
+The rapid growth of the fire in the building has been attributed to the cladding that was put on the outside of the building, this cladding was added in an effort to beautify the outside of the building for the surrounding residents. In this effort of beautification, lives have been lost and many scarred. 
+
+Ask yourself, why was the beautification required?
+Why is the amount of residents who lost their lives being under-exaggerated? 
+
+![Grenfell People]({{site.baseurl}}/images/grenfell-tower-crying.jpg) 
