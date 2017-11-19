@@ -2,7 +2,7 @@
 layout: post 
 type: "post" 
 title:  "Injustice in Grenfell" 
-date:   2017-19-11 
+date:   2017-11-19 
 categories: jekyll liquid 
 canonical: "Blog post" 
 description: "The injustice shown before, during and after the Grenfell disaster." 
