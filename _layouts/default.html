@@ -173,12 +173,12 @@
                 { %
                     if page.url contains "category" %
                 }
-                return "arehman | Archives"; { % elsif page.id != "index" %
+                return "arco | Archives"; { % elsif page.id != "index" %
                 }
-                return "arehman | {{page.canonical}}"; { %
+                return "arco | {{page.canonical}}"; { %
                     else %
                 }
-                return "arehman"; { % endif %
+                return "arco"; { % endif %
                 }
             });
 
@@ -192,7 +192,7 @@
                 characters: '░█▓ ▓▒░<>/',
                 speed: 60
             }).text(function(currentText) {
-                return "arehman";
+                return "arco";
             });
 
             setTimeout(function() {
@@ -243,7 +243,7 @@
     }
 
     // # of images
-    var imgCount = 9;
+    var imgCount = 6;
 
     var main = document.querySelector("main");
     // image directory
@@ -253,11 +253,10 @@
 
     // array of images & file name
     var images = new Array
-
-    images[1] = "thewolfpack";
-    images[2] = "thedarkknight";
-    images[3] = "lostintranslation";
-    images[4] = "ghostintheshell";
+    images[1] = "thedarkknight";
+    images[2] = "lostintranslation";
+    images[3] = "ghostintheshell";
+    images[4] = "spaceodyssey";
     images[5] = "biglebowski";
     images[6] = "myneighbourtotoro";
 
