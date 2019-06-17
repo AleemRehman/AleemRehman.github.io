@@ -1,5 +1,5 @@
-name: Aleem Rehman, Digital Designer & Front-end Developer
-description: Digital Designer & Front-end Developer
+name: Aleem Rehman, Web Developer & Mentor
+description: Web Developer & Mentor
 markdown: kramdown
 highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
@@ -15,16 +15,16 @@ logo: /images/dist/android-chrome-384x384.png
 social:
   name: Aleem Rehman
   links:
-    - https://twitter.com/aleem1a
+    - https://twitter.com/drmanhttn
     - https://github.com/AleemRehman
   twitter:
-    username: aleem1a
+    username: drmanhttn
     url: https://twitter.com/
   github:
     username: AleemRehman
     url: https://github.com/
   instagram:
-    username: aleem1a
+    username: manhttn
     url: https://instagram.com/
   email: contact@aleemrehman.co
 

@@ -6,7 +6,7 @@ date: 20/05/2017
 color1: "#34D4C1"
 color2: "#28FABE"
 role:
-  - Project Manager
+  - Project Management
   - Front-end Development
   - Design
 tech:
@@ -14,8 +14,8 @@ tech:
   - SASS
   - PHP
   - JS
-description: "A university project to create a website for a hipster restuarant in Reading"
-brief: "A university project to create a website for a hipster restuarant in Reading, I worked as lead developer and as the project manager"
+description: "A university project to create a website for a hipster restaurant in Reading"
+brief: "A university project to create a website for a hipster restaurant in Reading, I worked as lead developer and as the project manager"
 permalink: /projects/modernpie/
 project_url: "//github.com/webSmart001/MPC"
 category: "case study"
@@ -31,7 +31,7 @@ and led a team of 4 other team members. Team members were all assigned roles bas
 
 <p>The design needed to be kept minimal but there are some powerful back-end techniques used to make the web-app
   run more efficiently and faster on both desktop and mobile. By bootstrapping the site most of the layout of the site
-  follows a uniform struture, maintaining the quality of grids across devices and browsers.</p>
+  follows a uniform structure, maintaining the quality of grids across devices and browsers.</p>
 <!--
 <div class="cf ph3-l center">
   <figure class="tc db mv2 fl w-100 w-50-m w-25-l ma0 ph2-m ph3-l">
@@ -55,13 +55,13 @@ and led a team of 4 other team members. Team members were all assigned roles bas
   <li>A reservation page</li>
   <li>Daily specials menu</li>
   <li>Quick loading</li>
-  <li>Accesibilty options for people of varying ability</li>
+  <li>Accessibility options for people of varying ability</li>
   <li>Staff page - showing active staff and their department</li>
 </ol>
 
 <p>The design needed to be comprehensive with clean design. The site was content first, demonstrating 
-  that the content needed to be placed at the forefront. Beacuse of this simple, clean fonts and colours 
-  are used in conjunction to aid the readabilty of the forms and the menu.
+  that the content needed to be placed at the forefront. Because of this simple, clean fonts and colours 
+  are used in conjunction to aid the read-abilty of the forms and the menu.
 </p>
 
 <div class="mw8 center mv4">
@@ -105,7 +105,7 @@ and led a team of 4 other team members. Team members were all assigned roles bas
 <ol>
   <li><strong>SVG Sprite</strong> - All icons on the page are grouped into an svg sprite and inlined in the head of the document. This saves on requests for individual icons and because it's all SVG, the overhead is tiny. You can read more about svg sprites and how to utilise them <a class="{{site.link_classes}}" href="https://css-tricks.com/svg-sprites-use-better-icon-fonts/">here</a></li>
   <li><strong>CSS Development with Tachyons</strong> - This was my first time using <a class="{{site.link_classes}}" href="http://tachyons.io/">Tachyons</a> and I’m very impressed with it. Regardless of your thoughts on atomic vs semantic css, you can’t deny the performance benefits of using a library such as Tachyons. Paired with uncss, which strips out all unused CSS, the total CSS size comes to just 7kb, and thats before gzipping.</li>
-  <li><strong>Inlining CSS</strong> - To stop CSS render blocking the page before it has loaded I inlined it in the head of the document. The maximum size Google recommends for inlined CSS is 14kb so at 7kb it was a no brainer to just inline all of it.</li>
+  <li><strong>Inlining CSS</strong> - To stop CSS render blocking the page before it has loaded I inlined it in the head of the document. The maximum size Google recommends for inlined CSS is 14kb so at 7kb it was a no-brainer to just inline all of it.</li>
   <li><strong>Concatenate, minify and asynchronously load js</strong> - This is easy to do with a gulp task and means less requests to the browser. Adding <code class="{{site.code_classes}}">async</code> to the script tag means it can be loaded asynchronously also.</li>
   <li><strong>SSL</strong> - Having SSL enabled gives you access to HTTP/2 and service workers. Github Pages does provide free SSL, but only for their <code class="{{site.code_classes}}">username.github.io</code> domains and not custom domains. The easiest way to get around this is to just use <a class="{{site.link_classes}}" href="https://www.cloudflare.com/">Cloudflare</a> as they provide free SSL certs.</li>
   <li><strong>Cloudflare</strong> - Github Pages is already fast but adding Cloudflare means free SSL, a better CDN and more customisable caching options.</li>

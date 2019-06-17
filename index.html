@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Aleem Rehman - Digital Designer & Front-end Developer"
-description: "The portfolio of Alem Rehman a digital designer and front-end developer, London and remote. Not available for hire."
+title: "Aleem Rehman - Web Developer & Mentor"
+description: "The portfolio of Aleem Rehman a web developer & mentor, London and remote. Not available for hire."
 id: "index"
 ---
 
@@ -10,24 +10,20 @@ id: "index"
 </svg>
 
 <div class="mw7 center pv3 pv4-m pv5-l ph4 ph0-l">
-  <h1 class="f3 f1-ns serif fw-9 mt0 mt4-ns mb4 mb6-ns black lh-title">Digital designer & front-end developer.</h1>
+  <h1 class="f3 f1-ns serif fw-9 mt0 mt4-ns mb4 mb6-ns black lh-title">Web Developer & Mentor.</h1>
 
   <section class="cf mb4 mb5-ns">
     <div class="fl w-100 w-30-ns">
       <h2 class="lh-copy-lg-ns mb3 mb0-ns f8 gray ttu tracked ma0">Who?</h2>
     </div>
     <div class="fl w-100 w-70-ns {{site.paragraph_classes}}">
-      <p class="mt0 lh-copy-lg">I’m Aleem Rehman, a digital designer &amp; front-end developer hailing from London but working remotely with clients around the globe. I work to create well-designed and comprehensive products. 
+      <p class="mt0 lh-copy-lg">I’m Aleem Rehman, a web developer &amp; mentor hailing from London but working remotely with clients around the globe. I work to create well-designed and comprehensive products. 
 
       <br><a id="show1" class="ttu tracked b gray f8 link hover-blue" href="javascript:void(0)">See more?</a></p>
 
-      <p id="about1" class="lh-copy-lg dn">I am currently interning at <a class="{{site.link_classes}}" href="//autino.com">Autino</a>. and working towards a Computer Science degree at the University of Reading.
+      <p id="about1" class="lh-copy-lg dn">I have just finished my degree at the university of Reading in computer science, completing a web development year-long placement within a software house in Reading.
       <br>
-      <a id="show2" class="ttu tracked b gray f8 link hover-blue" href="javascript:void(0)">And more?</a>
       </p>
-
-      <p id="about2" class="lh-copy-lg dn">Outside of the internet, I lift heavy things, work with 🎵 artists and eat 🍔.</p>
-
     </div>
   </section>
 
@@ -65,9 +61,6 @@ id: "index"
       <div class="flex flex-row">
         <div class="w-50">
           <ul class="list pl0 ma0 {{site.paragraph_classes}}">
-            <li class="mb3">
-              <a class="link hover-blue active-black link-arrow near-black" href="{{site.social.twitter.url}}{{site.social.twitter.username}}" title="Follow me on Twitter">Twitter</a>
-            </li>
             <li class="mb3">
               <a class="link hover-blue active-black link-arrow near-black" href="{{site.social.github.url}}{{site.social.github.username}}" title="Follow me on Github">Github</a>
             </li>
@@ -115,6 +108,16 @@ id: "index"
             {%if project.role contains "Front-end Development"%}
             <svg class="icon ml1 icon-xs blue v-mid" title="Front-end Development">
               <use xlink:href="#icon-polygon"></use>
+            </svg>
+            {%endif%}
+            {%if project.role contains "Back-end Development"%}
+            <svg class="icon ml1 icon-xs red v-mid" title="Back-end Development">
+              <use xlink:href="#icon-triangle"></use>
+            </svg>
+            {%endif%}
+            {%if project.role contains "Project Management"%}
+            <svg class="icon ml1 icon-xs black v-mid" title="Project Management">
+              <use xlink:href="#icon-square"></use>
             </svg>
             {%endif%}
             </a>
