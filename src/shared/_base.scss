@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+@import "./variables";
+
+html, body {
+    font-family: 'Noto Sans TC', sans-serif;
+    word-wrap: break-word;
+    font-kerning: normal;
+    font-feature-settings: "kern", "liga", "clig", "calt";
+}
+
+::selection {
+    color: $white;
+    background-color: $feature-colour-muted;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 200;
+}
