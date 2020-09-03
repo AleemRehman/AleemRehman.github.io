@@ -60,7 +60,7 @@
   "homepage": "https://github.com/shakyShane/jekyll-gulp-sass-browser-sync",
   "dependencies": {
     "baffle": "^0.3.6",
-    "lazysizes": "^3.0.0",
+    "lazysizes": "^5.2.1",
     "lightense-images": "^1.0.4",
     "medium-zoom": "^0.1.3",
     "tachyons-sass": "^4.7.1"
