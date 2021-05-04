@@ -36,7 +36,7 @@
     "jshint": "^2.9.4",
     "lastfm-listener": "^1.0.4",
     "lossy-imagemin": "0.0.3",
-    "merge": "^1.2.0",
+    "merge": "^2.1.1",
     "rename": "^1.0.4",
     "source": "0.0.3",
     "vinyl-buffer": "^1.0.0",
